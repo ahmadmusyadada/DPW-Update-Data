@@ -31,6 +31,32 @@
 </head>
 <body>
     <h1>Update Data Mahasiswa</h1>
-    <form action="" me></form>
+    <form action="" method="post">
+        <ul>
+            <li>
+                <label for="Nama">Nama: </label>
+                <input type="text" name="Nama" id="Nama">
+            </li>
+            <li>
+                <label for="Nim">NIM: </label>
+                <input type="text" name="Nim" id="Nim" required>
+            </li>
+            <li>
+                <label for="Email">Email: </label>
+                <input type="text" name="Email" id="Email" required>
+            </li>
+            <li>
+                <label for="Jurusan">Jurusan: </label>
+                <input type="text" name="Jurusan" id="Jurusan" required>
+            </li>
+            <li>
+                <label for="Gambar">Gambar: </label>
+                <input type="text" name="Gambar" id="Gambar" required>
+            </li>
+            <li>
+                <button type="submit" name="submit">Update</button>
+            </li>
+        </ul>
+    </form>
 </body>
 </html>
