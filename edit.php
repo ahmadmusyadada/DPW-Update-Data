@@ -22,7 +22,8 @@
     $id=$_GET[id];
     $mhs=query("SELECT *FROM mahasiswa WHERE id=$id");
     // var_dump($id);
-    var_dump($mhs);
+    var_dump($mhs[0]["Nama"]);
+    // var_dump($mhs);
 ?>
 
 <!DOCTYPE html>
