@@ -48,16 +48,72 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="tambah_data.php">Tambah Data Mahasiswa</a></li>
             </ul>
-            <form class="navbar-form navbar-right" role="search" method="post">
-                <div class="form-group">
-                    <input type="text" name="keyword" class="form-control" autofocus placeholder="masukkan keyword pencarian">
-                </div>
-                <button type="submit" name=cari class="btn btn-default">Cari</button>
-            </form>
         </div><!-- /.navbar-collapse -->
     </nav>
+
         <h1 class="text-center">Tambah Data Mahasiswa</h1>
-        <form action="" method="post">
+
+    
+    <form action="" method="post" class="form-inline" role="form">
+    
+        <!-- <div class="form-group">
+            <label for="" class="">label</label>
+            <input type="email" class="form-control" id="" placeholder="Input field">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="">label</label>
+            <input type="email" class="form-control" id="" placeholder="Input field">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="">label</label>
+            <input type="email" class="form-control" id="" placeholder="Input field">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="">label</label>
+            <input type="email" class="form-control" id="" placeholder="Input field">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="">label</label>
+            <input type="email" class="form-control" id="" placeholder="Input field">
+        </div> -->
+        
+
+        <div class="form-group">
+            <label for="Nama" class="col-sm-1 control-label">Nama</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" name="Nama" id="Nama" placeholder="Nama" required>
+                </div>
+
+            <label for="Nim" class="col-sm-1 control-label">NIM</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" name="Nim" id="Nim" placeholder="NIM" required>
+                </div>
+
+            <label for="Email" class="col-sm-1 control-label">Email</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" name="Email" id="Email" placeholder="Email" required>
+                </div>
+
+            <label for="Jurusan" class="col-sm-1 control-label">Jurusan</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" name="Jurusan" id="Jurusan" placeholder="Jurusan" required>
+            </div>
+
+            <label for="Gambar" class="col-sm-1 control-label">Gambar</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" name="Gambar" id="Gambar" placeholder="Gambar" required>
+            </div>
+        </div>
+        <!-- <button type="submit" class="btn btn-primary" style="float: right; margin-right: 5%; margin-top: 2%">Submit</button> -->
+    
+        <button type="submit" name="submit" class="btn btn-primary" style="margin-left: 20%; margin-top: 2%">Submit</button>
+    </form>
+    
+        <!-- <form action="" method="post">
             <ul>
                 <li>
                     <label for="Nama">Nama:</label>
@@ -83,6 +139,6 @@
                     <button type="submit" name="submit"> Tambah </button>
                 </li>
             </ul>
-        </form>
+        </form> -->
     </body>
 </html>
