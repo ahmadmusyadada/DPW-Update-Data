@@ -37,6 +37,9 @@
 <body>
     <h1>Update Data Mahasiswa</h1>
     <form action="" method="post">
+    <li>
+        <input type="hidden" name="id" value="<?= $mhs[id] ?>">
+    </li>
         <ul>
             <li>
                 <label for="Nama">Nama: </label>
