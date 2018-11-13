@@ -63,5 +63,17 @@ function edit ($data){
     mysqli_query($conn, $query);
 
     return mysqli_affected_rows($conn);
-} 
+}
+
+function cari($keyword){
+    $sql="SELECT *FROM mahasiswa
+            WHERE
+            Nama LIKE '%$keyword%' OR
+            Nim LIKE '%$keyword%' OR
+            Email LIKE '%$keyword%' OR
+            Jurusan LIKE '%$keyword%'
+            ";
+    
+    return query($sql);
+}
 ?>
