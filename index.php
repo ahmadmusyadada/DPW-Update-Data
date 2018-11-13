@@ -23,6 +23,7 @@ if(isset($_POST["cari"])){
         <input type="text" name="keyword" size="40" autofocus placeholder="masukkan keyword pencarian" autocomplete="off">
         <button type="submit" name=cari>cari</button>
     </form>
+    <br>
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No. </th>
