@@ -20,9 +20,9 @@
         }
     }
     $id=$_GET[id];
-    $mhs=query("SELECT *FROM mahasiswa WHERE id=$id");
+    $mhs=query("SELECT *FROM mahasiswa WHERE id=$id")[0];
     // var_dump($id);
-    var_dump($mhs[0]["Nama"]);
+    // var_dump($mhs[0]["Nama"]);
     // var_dump($mhs);
 ?>
 
@@ -40,23 +40,23 @@
         <ul>
             <li>
                 <label for="Nama">Nama: </label>
-                <input type="text" name="Nama" id="Nama">
+                <input type="text" name="Nama" id="Nama" value="<?= $mhs[Nama]; ?>">
             </li>
             <li>
                 <label for="Nim">NIM: </label>
-                <input type="text" name="Nim" id="Nim" required>
+                <input type="text" name="Nim" id="Nim" required value="<?= $mhs[Nim]; ?>">
             </li>
             <li>
                 <label for="Email">Email: </label>
-                <input type="text" name="Email" id="Email" required>
+                <input type="text" name="Email" id="Email" required value="<?= $mhs[Email]; ?>">
             </li>
             <li>
                 <label for="Jurusan">Jurusan: </label>
-                <input type="text" name="Jurusan" id="Jurusan" required>
+                <input type="text" name="Jurusan" id="Jurusan" required value="<?= $mhs[Jurusan]; ?>">
             </li>
             <li>
                 <label for="Gambar">Gambar: </label>
-                <input type="text" name="Gambar" id="Gambar" required>
+                <input type="text" name="Gambar" id="Gambar" required value="<?= $mhs[Gambar]; ?>">
             </li>
             <li>
                 <button type="submit" name="submit">Update</button>
