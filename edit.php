@@ -20,7 +20,9 @@
         }
     }
     $id=$_GET[id];
-    var_dump($id);
+    $mhs=query("SELECT *FROM mahasiswa WHERE id=$id");
+    // var_dump($id);
+    var_dump($mhs);
 ?>
 
 <!DOCTYPE html>
