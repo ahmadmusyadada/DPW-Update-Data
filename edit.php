@@ -36,7 +36,7 @@
     <title>Update Data</title>
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -51,10 +51,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
     </nav>
     <h1>Update Data Mahasiswa</h1>
+    
     <br>
+    
     <form action="" method="post" class="form-inline" role="form">
-    <input type="hidden" name="id" value="<?= $mhs[id] ?>">
-        <div class="form-group">
+        <input type="hidden" name="id" value="<?= $mhs[id] ?>">
+            <div class="form-group">
             <label for="Nama" class="col-sm-1 control-label">Nama</label>
                 <div class="col-sm-11">
                     <input type="text" class="form-control" name="Nama" id="Nama" value="<?= $mhs[Nama]; ?>">

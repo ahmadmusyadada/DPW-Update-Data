@@ -54,7 +54,7 @@
         <h1 class="text-center">Tambah Data Mahasiswa</h1>
 
     
-    <form action="" method="post" class="form-inline" role="form">
+    <form action="" method="post" class="form-inline" role="form" enctype="multipart/form-data">
     
         <!-- <div class="form-group">
             <label for="" class="">label</label>
@@ -105,7 +105,7 @@
 
             <label for="Gambar" class="col-sm-1 control-label">Gambar</label>
             <div class="col-sm-11">
-                <input type="text" class="form-control" name="Gambar" id="Gambar" placeholder="Gambar" required>
+                <input type="file" class="form-control" name="Gambar" id="Gambar" placeholder="Gambar" required>
             </div>
         </div>
         <!-- <button type="submit" class="btn btn-primary" style="float: right; margin-right: 5%; margin-top: 2%">Submit</button> -->
