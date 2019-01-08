@@ -51,7 +51,6 @@ function edit ($data){
     $nim = htmlspecialchars($data["Nim"]);
     $email = htmlspecialchars($data["Email"]);
     $jurusan = htmlspecialchars($data["Jurusan"]);
-    $gambar = htmlspecialchars($data["Gambar"]);
 
     $query = "UPDATE mahasiswa SET
                 Nama = '$nama',
